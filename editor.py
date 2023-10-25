@@ -1,6 +1,9 @@
 import os
 import ffmpeg
 
+def DurationCrop(floc,nfloc,start,duration):
+    os.system(f"ffmpeg -ss {start} -i {floc} -t {duration} {nfloc}")
+    return True
 def video_to_video_note(floc, nfloc):
     probe = ffmpeg.probe(floc)
     for stream in probe["streams"]:
