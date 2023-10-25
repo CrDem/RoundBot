@@ -1,4 +1,4 @@
-#version 1.3
+# version 1.3
 import os.path
 
 from aiogram import Bot, Dispatcher, types, executor
